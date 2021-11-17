@@ -1,0 +1,32 @@
+package Exercise;
+
+public class Exercise_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double income;
+		int age = 50;
+		double amount = 1000.0;
+		double balance = 5000.0;
+		
+		if ((amount <= 1000.0) && (amount <= balance))
+			balance = balance - amount;
+		    System.out.println("1. Acct new balance = " + balance);
+		    
+	   if((amount <= 1000.0) && (amount <= balance))//block statement
+       {
+			balance = balance - amount;
+	    System.out.println("2. Acct new balance = " + balance);
+	    }
+	   
+	   if((amount <= 1000.0) && (amount <= balance))
+			balance = balance + 1000.0;
+	    System.out.println("3. Acct new balance = " + balance);
+				
+		
+		
+		
+
+	}
+
+}
