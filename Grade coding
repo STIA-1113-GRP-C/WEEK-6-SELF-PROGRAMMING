@@ -1,0 +1,52 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Mark {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Scanner sc = new Scanner(System.in);
+    
+    String subject_a, subject_b;
+    double mark_a, mark_b,mark;
+    char grade;
+    System.out.print("Enter your subject A : ");
+    subject_a = sc.next();
+    System.out.print("Enter your mark A    : ");
+    mark_a = sc.nextDouble();
+    System.out.print("Enter your subject B : ");
+    subject_b = sc.next();
+    System.out.print("Enter your mark B    : ");
+    mark_b = sc.nextDouble();
+    
+    System.out.println();
+    
+    if (mark_a >= 50.0) 
+    	System.out.println("Subject A pass");
+    else
+    	System.out.println("Subject A fail");
+    if (mark_b > 50.0) 
+    	System.out.println("Subject B pass");
+    else
+    	System.out.println("Subject B fail");
+    if (mark_a > mark_b) 
+    	System.out.println("Mark for subject " + subject_a + " is greater than subject " + subject_b);
+    else
+    	System.out.println("Mark for subject " + subject_b + " is greater than subject " + subject_a);
+    mark = (mark_a + mark_b)/2;
+    
+    if((mark >= 90) && (mark <= 100))
+		grade = 'A';
+	else if ((mark >= 80) && (mark <= 89))
+		grade = 'B';
+	else if ((mark >= 70) && (mark <= 79))
+		grade = 'C';
+	else if ((mark >= 60) && (mark <= 69))
+		grade = 'D';
+	else
+	    grade = 'F';
+    
+    System.out.println("Your average mark is " + mark);
+	System.out.println("Your grade is " + grade);
+	}
+
+}
