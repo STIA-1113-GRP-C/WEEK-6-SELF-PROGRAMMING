@@ -1,0 +1,30 @@
+package mySwitch;
+import java.util.Scanner;
+public class myGrade_IfElse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner sc = new Scanner(System.in);
+        
+        
+        System.out.print("Enter your grade from A,B,C,D,E and F : ");
+        String str = sc.next();
+        char grade = str.charAt(0);
+         
+        if (grade == 'A')
+        	System.out.println("marks >=90 then Excellent: Grade A");
+        else if (grade == 'B')
+        	System.out.println("marks >=90 and less than 80  then Very Good: Grade B ");
+        else if (grade == 'C')
+        	System.out.println("marks >=80 and less than 70 then Good: Grade C ");
+        else if (grade == 'D')
+        	System.out.println("marks >=70 and less than 60 then Good: Grade D");
+        else if (grade == 'E')
+        	System.out.println("marks >=60 and less than 50 then Good: Grade E");
+        else if (grade == 'F')
+        	System.out.println("marks >=60 and less than 50 then Good: Grade E");
+        else
+        	System.out.println("Failed!!!");
+	}
+
+}
