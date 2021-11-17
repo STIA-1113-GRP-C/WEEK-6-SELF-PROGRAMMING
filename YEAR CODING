@@ -1,0 +1,23 @@
+package Exercise;
+
+public class exercise_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int year = 1952;
+		int month = 10;
+		int day = 15;
+		double d1 = 2.2 + 4.4;
+		double d2 = 6.6;
+		int d3 = 2 + 4;
+		int d4 = 6;
+		String s1 = "Azman";
+		String s2 = "Azman";
+		
+		System.out.println((year > 1951) && (year < 1953) && (month > 9) && (month < 11 ) && (day > 14) && (day < 16));
+        System.out.println(d1 == d2);
+        System.out.println(d3 == d4);
+        System.out.println(s1 == s2);
+	}
+
+}
